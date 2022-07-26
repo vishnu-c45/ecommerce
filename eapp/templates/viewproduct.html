@@ -1,0 +1,39 @@
+{% extends 'admin-base.html' %}
+
+{% block content %}
+
+<table  class="table text-center ">
+  <h2 align="center">Show details</h2>
+  <tr>
+      <th>Product name</th>
+      <th>Price</th>
+      <th>Image</th>
+      <th>Category</th>
+      
+      <th>Action</th>
+  </tr>
+  {% for p in pro %}
+ <tr>
+     
+     <td>{{p.product_name}}</td>
+     <td>{{p.price}}</td>
+     <td><img width="70px" src='{{ p.image.url }}'></td>  
+     <td>{{p.category.category_name}}</td>
+ 
+     
+      <td><a href="{% url 'editproduct' p.id %}" class="btn btn-success">Edit</a>
+      <a href="{% url 'delete' p.id %}"class="btn btn-danger" >Delete</a></td>
+      
+  </tr>
+  {% endfor %}
+</table>
+
+
+  
+
+  </div>
+</div>
+
+
+
+{% endblock%}

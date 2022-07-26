@@ -1,0 +1,25 @@
+{% extends 'userbase.html' %}
+
+{% block content %}
+
+<div class="card"  style="width: 18rem; margin: auto;">
+    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/1200px-User_font_awesome.svg.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">MY PROFILE</h5>
+      
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Name     -{{std.first_name}}-{{user.last_name}}</li>
+      <li class="list-group-item">Username -{{std.username}}</li>
+      <li class="list-group-item">Email    -{{std.email}}</li>
+    </ul>
+    <a class="btn btn-dark" href="">Edit</a></button>
+    <div class="card-body">
+        
+     
+     
+    </div>
+  </div>
+
+
+{% endblock %}

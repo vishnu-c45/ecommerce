@@ -1,0 +1,39 @@
+{% extends 'userbase.html' %}
+
+{% block content %}
+
+   <!-- Cart Section -->
+   <div class = 'container' style = 'margin-top: 50px; width: 70%'>
+    <table class="table table-light table-hover">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col"><h6>Item</h6></th>
+            <th scope="col"><h6>Price</h6></th>
+            <th scope="col"><h6>Quantity</h6></th>
+            <th scope="col"><h6>Total</h6></th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+    
+          {% for item in cart %}
+          <tr>
+            <th scope="row"><div id = "cart_image"><img src = '{{item.product.image.url}}'style="height: 200px;width: 260px;"></div></th>
+            <td>{{item.product.product_name}}</td>
+            <td>{{item.product.price}}</td>
+          
+            <td><input type = 'number' class = 'quantity' value = "" style = 'width: 50px; padding-left: 5px'></td>
+            <td>{{item.product.price}}</td>
+            <td><a class="btn btn-danger" href="{% url 'deletecart' item.id %}">Remove</a></td>
+          </tr>
+         
+          {% endfor %}
+          <button class="btn-danger">Buy now >>>></button>
+          
+          
+        </tbody>
+      </table>
+    </div>
+
+{% endblock %}
