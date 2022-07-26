@@ -1,0 +1,352 @@
+<!DOCTYPE html>{% load static %}
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% static 'assets/vendors/feather/feather.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendors/ti-icons/css/themify-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendors/css/vendor.bundle.base.css' %}">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="{% static 'assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendors/ti-icons/css/themify-icons.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/js/select.dataTables.min.css' %}">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% static 'assets/css/vertical-layout-light/style.css' %}">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% static 'assets/images/favicon.png' %}" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center" style="background-color: #343a40;height: 70px;">
+        <a class="navbar-brand brand-logo mr-5" href=""><img src="{% static 'assets/images/ngoP.png' %}"
+            class="mr-2" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href=""><img src="{% static 'assets/images/ngoP.png' %}"
+            alt="logo" /></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end" style="background-color: #343a40; height: 70px;">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+     
+   
+
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item ">
+            <button type="button" class=" btn btn-danger float-end position-relative" 
+            >
+              IT HEAD
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill ">
+              
+              </span>
+            </button>
+            </li>
+
+            <li class="nav-item ">
+              <button type="button" class=" btn btn-info float-end position-relative" 
+              >
+              STUDENT COUNCILOR
+
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill ">
+                
+                </span>
+              </button>
+              </li>  
+
+             
+
+              <li class="nav-item ">
+                <button type="button" class=" btn btn-success float-end position-relative" 
+                >
+                DOCUMENTS OFFICER
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill ">
+                  
+                  </span>
+                </button>
+                </li>  
+<!--             
+            <li class="nav-item ">
+              <button type="button" class=" btn btn-primary float-end position-relative" data-toggle="modal"
+              data-target="#myModaltwo">
+                Send Messages To NGO
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  99+
+                </span>
+              </button>
+            </li> -->
+
+          
+
+        </ul>
+
+        <ul class="navbar-nav navbar-nav-right">
+         
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="{% static 'assets/images/admin.png' %}" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <!-- <a class="dropdown-item">
+                <i class="icon-head menu-icon text-primary"></i>
+                Admin
+              </a> -->
+              <a class="dropdown-item" href="">
+                <i class="ti-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item" href="">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+</div>
+</nav>
+
+        
+         
+          
+          
+
+          <!-- chat tab ends -->
+        
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html --> 
+      <div class="container-fluid page-body-wrapper site-blocks-cover inner-page-cover overlay" >
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Profile</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title"> ADD LEADS</span>
+             
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">PREVIOUS LEADS </span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title" data-toggle="dropdown">STUDENT COUNCILOR </span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title"> DOCUMENTS OFFICE </span>
+            </a>
+          </li>
+          
+         
+          
+          
+        </ul>
+
+      
+      </nav>
+     
+      
+
+
+      <!-- Modal Number-1-->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+    
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color: wheat;">
+                <div class="modal-header">
+                    <button type="button" class="close" style="color: rgb(13, 13, 13);"  data-dismiss="modal">&times;</button>
+                    
+                </div>
+                <h4 style="margin-left: 140px;" class="modal-title" > Send Messages To Doner</h4>
+                <!-- Modal body -->
+                <div class="modal-body"  style="background-color: wheat;">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="card"  style="background-color: wheat;">
+                          <select class="form-control" style="color:rgb(18, 17, 17);" name="doners">
+                                    
+                            <option value="">-</option>
+                            <!-- {% for i in don %}
+                            <option value="{{i.id}}">{{i.firstname}}</option>
+                            {% endfor %} -->
+                           
+                          </select>
+                            <div class="card-body">
+                                <div class="row p-2">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
+                                        <textarea class="col-12 col-sm-12 col-md-12 col-lg-12 form-control  text-light"
+                                            style="height: 200px; background-color: #413434; " name="msg1"
+                                            rows="4"> </textarea>
+                                    </div>
+                                 
+                                </div>
+                                <br>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center pb-3">
+                                    <button type="submit" class="btn btn-primary btn-icon-text ">
+    
+                                        Send
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </form>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+
+
+    <!-- Modal Number-2-->
+    <div class="modal fade" id="myModaltwo" role="dialog">
+      <div class="modal-dialog">
+  
+          <!-- Modal content-->
+          <div class="modal-content" style="background-color: wheat;">
+              <div class="modal-header">
+                  <button type="button" class="close" style="color: rgb(13, 13, 13);"  data-dismiss="modal">&times;</button>
+                  
+              </div>
+              <h4 style="margin-left: 140px;" class="modal-title" > Send Messages To NGO</h4>
+              <!-- Modal body -->
+              <div class="modal-body" style="background-color:wheat">
+                  <form action="" method="post" enctype="multipart/form-data">
+                      {% csrf_token %}
+                      <div class="card" style="background-color: wheat">
+                          <div class="card-body">
+                              <div class="row p-2">
+                                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
+                                      <textarea class="col-12 col-sm-12 col-md-12 col-lg-12 form-control  text-light"
+                                          style="height: 200px; background-color: #413434; " name="msg2"
+                                          rows="4"> </textarea>
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center pb-3">
+                                  <button type="submit" class="btn btn-primary btn-icon-text ">
+  
+                                      Send
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+  
+                  </form>
+  
+              </div>
+  
+          </div>
+  
+      </div>
+  </div>
+
+
+
+
+      {%block content%}
+      
+       {%endblock%}
+
+      <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    
+    
+        document.addEventListener("DOMContentLoaded", () => {
+            const rows = document.querySelectorAll("tr[data-href]");
+            rows.forEach(row => {
+                row.addEventListener("click", () => {
+                    window.location.href = row.dataset.href;
+                });
+            });
+        });
+    
+    </script>
+    
+
+      <!-- plugins:js -->
+      <script src="{% static 'assets/vendors/js/vendor.bundle.base.js' %}"></script>
+      <!-- endinject -->
+      <!-- Plugin js for this page -->
+      <script src="{% static 'assets/vendors/chart.js/Chart.min.js' %}"></script>
+      <script src="{% static 'assets/vendors/datatables.net/jquery.dataTables.js' %}"></script>
+      <script src="{% static 'assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js' %}"></script>
+      <script src="{% static 'assets/js/dataTables.select.min.js"></script>
+
+      <!-- End plugin js for this page -->
+      <!-- inject:js -->
+      <script src="{% static 'assets/js/off-canvas.js' %}"></script>
+      <script src="{% static 'assets/js/hoverable-collapse.js' %}"></script>
+      <script src="{% static 'assets/js/template.js' %}"></script>
+      <script src="{% static 'assets/js/settings.js' %}"></script>
+      <script src="{% static 'assets/js/todolist.js' %}"></script>
+      <!-- endinject -->
+      <!-- Custom js for this page-->
+      <script src="{% static 'assets/js/dashboard.js' %}"></script>
+      <script src="{% static 'assets/js/Chart.roundedBarCharts.js' %}"></script>
+      <!-- End custom js for this page-->
+      <!-- Custom js for this page-->
+      <script src="{% static 'assets/js/file-upload.js' %}"></script>
+      <script src="{% static 'assets/js/typeahead.js' %}"></script>
+      <script src="{% static 'assets/js/select2.js' %}"></script>
+      <!-- End custom js for this page-->
+      <!-- Custom js for this page-->
+      <script src="{% static 'assets/js/alerts.js' %}"></script>
+      <script src="{% static 'assets/js/avgrund.js' %}"></script>
+      <!-- End custom js for this page-->
+      <!-- Plugin js for this page-->
+      <script src="{% static 'assets/vendors/sweetalert/sweetalert.min.js' %}"></script>
+      <script src="{% static 'assets/vendors/jquery.avgrund/jquery.avgrund.min.js' %}"></script>
+      <!-- End plugin js for this page-->
+
+      
+    </body>
+
+</html>
